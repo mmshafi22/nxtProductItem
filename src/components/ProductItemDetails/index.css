@@ -1,0 +1,49 @@
+.product-bg-container {
+  height: 100vh;
+  overflow-y: auto;
+}
+.product-item-detail-container {
+  width: 100%;
+  max-width: 1120px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.main-img-view {
+  width: 80%;
+  height: 200px;
+  border-radius: 10px;
+}
+.detail-heading {
+  font-family: Roboto;
+  font-size: 25px;
+  color: #616e7c;
+}
+.detail-price {
+  font-family: Roboto;
+  font-size: 25px;
+  color: #12022f;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .detail-text {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .product-item-detail-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .main-img-view {
+    width: 400px;
+    height: 500px;
+  }
+  .detail-heading {
+    font-size: 45px;
+  }
+  .detail-text {
+    margin-left: 25px;
+    width: 40%;
+  }
+}
